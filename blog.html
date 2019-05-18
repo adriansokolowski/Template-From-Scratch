@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Adrian Sokołowski</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700&display=swap&subset=latin-ext"
+        rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body id="blog">
+
+    <div id="main-nav-wrapper">
+        <nav id="main-nav">
+
+            <a id="main-logo" href="index.html"><i class="fas fa-globe fa-2x"></i></a>
+
+            <button id="mobile-menu-button" onclick="toggle('main-menu')"><i class="fas fa-bars fa-2x"></i></button>
+
+            <ul id="main-menu">
+                <li><a href="index.html">Strona Główna</a></li>
+                <li><a href="">Pozycja 2</a></li>
+                <li><button onclick="toggle('dropdown-menu-1')">Rozwijane menu <i
+                            class="fas fa-caret-down"></i></button></li>
+                <ul id="dropdown-menu-1">
+                    <li><a href="">Pozycja rozwijana 1</a></li>
+                    <li><a href="">Pozycja rozwijana 2</a></li>
+                    <li><a href="">Pozycja rozwijana 3</a></li>
+                    <li><a href="">Pozycja rozwijana 4</a></li>
+                </ul>
+                <li><a href="">Pozycja 3</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main id="main-container">
+
+        <section id="main-section">
+
+            <section id="main-content">
+                <article>
+                    <a href="">
+                        <img src="http://lorempixel.com/1600/500" alt="Opis obrazka" />
+                        <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </h2>
+                    </a>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum, ad! Corporis odio autem laudantium
+                        accusamus ipsa facere temporibus dicta similique vitae rerum ex error unde maxime assumenda,
+                        eaque distinctio obcaecati. </p>
+
+                </article>
+                <article>
+                    <a href="">
+                        <img src="http://lorempixel.com/1600/500" alt="Opis obrazka" />
+                        <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </h2>
+                    </a>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum, ad! Corporis odio autem laudantium
+                        accusamus ipsa facere temporibus dicta similique vitae rerum ex error unde maxime assumenda,
+                        eaque distinctio obcaecati. </p>
+
+                </article>
+
+            </section>
+
+
+            <aside id="main-sidebar">
+                <h2>Najpopularniejsze wpisy</h2>
+                <ul>
+                    <li>
+                        <a href="">
+                            <img src="http://lorempixel.com/80/80" alt="Opis obrazka" />
+                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. </h3>
+                        </a>
+                        <p>16 Maja 2019</p>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="http://lorempixel.com/80/80" alt="Opis obrazka" />
+                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. </h3>
+                        </a>
+                        <p>16 Maja 2019</p>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="http://lorempixel.com/80/80" alt="Opis obrazka" />
+                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. </h3>
+                        </a>
+                        <p>16 Maja 2019</p>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="http://lorempixel.com/80/80" alt="Opis obrazka" />
+                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. </h3>
+                        </a>
+                        <p>16 Maja 2019</p>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="http://lorempixel.com/80/80" alt="Opis obrazka" />
+                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. </h3>
+                        </a>
+                        <p>16 Maja 2019</p>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="http://lorempixel.com/80/80/" alt="Opis obrazka" />
+                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. </h3>
+                        </a>
+                        <p>16 Maja 2019</p>
+                    </li>
+                </ul>
+            </aside>
+        </section>
+    </main>
+
+    <script>
+        function toggle(elementid) {
+
+            var element = document.getElementById(elementid);
+
+            if (getComputedStyle(element).display === 'none') {
+                element.style.display = 'block';
+            } else {
+                element.style.display = 'none';
+            }
+        }
+    </script>
+
+</body>
+
+</html>
