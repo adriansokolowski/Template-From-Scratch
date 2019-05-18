@@ -15,31 +15,34 @@
 
 <body id="blog">
 
-    <div id="main-nav-wrapper">
-        <nav id="main-nav">
+        <div id="main-nav-wrapper">
+                <nav id="main-nav" class="container">
+        
+                    <a id="main-logo" href="index.html"><i class="fas fa-globe fa-2x"></i></a>
+        
+                    <button id="mobile-menu-button" onclick="toggle('main-menu')"><i class="fas fa-bars fa-2x"></i></button>
+        
+                    <ul id="main-menu">
+                        <li><a href="index.html">Strona Główna</a></li>
+                        <li><a href="">Pozycja 2</a></li>
+                        <li>
+                            <button onclick="toggle('dropdown-menu-1')">Rozwijane menu 
+                                <i class="fas fa-caret-down"></i> 
+                            </button> 
+                            <ul id="dropdown-menu-1">
+                                <li><a href="">Pozycja rozwijana 1</a></li>
+                                <li><a href="">Pozycja rozwijana 2</a></li>
+                                <li><a href="">Pozycja rozwijana 3</a></li>
+                                <li><a href="">Pozycja rozwijana 4</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Pozycja 3</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </nav>
+            </div>
 
-            <a id="main-logo" href="index.html"><i class="fas fa-globe fa-2x"></i></a>
-
-            <button id="mobile-menu-button" onclick="toggle('main-menu')"><i class="fas fa-bars fa-2x"></i></button>
-
-            <ul id="main-menu">
-                <li><a href="index.html">Strona Główna</a></li>
-                <li><a href="">Pozycja 2</a></li>
-                <li><button onclick="toggle('dropdown-menu-1')">Rozwijane menu <i
-                            class="fas fa-caret-down"></i></button></li>
-                <ul id="dropdown-menu-1">
-                    <li><a href="">Pozycja rozwijana 1</a></li>
-                    <li><a href="">Pozycja rozwijana 2</a></li>
-                    <li><a href="">Pozycja rozwijana 3</a></li>
-                    <li><a href="">Pozycja rozwijana 4</a></li>
-                </ul>
-                <li><a href="">Pozycja 3</a></li>
-                <li><a href="blog.html">Blog</a></li>
-            </ul>
-        </nav>
-    </div>
-
-    <main id="main-container">
+    <main id="main-container" class="container">
 
         <section id="main-section">
 
